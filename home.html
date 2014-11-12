@@ -11,13 +11,15 @@
 	<script src="js/d3.v3.min.js" type="text/javascript"></script>
 	<link href="css/styles.css" rel='stylesheet' type='text/css'>
 	<script type="text/javascript">
-	jQuery(document).ready(function(){
-		$("#logo").click(function(){
-			$("#chart").toggle();
-			$("#about-box").toggle();
-		});
-	});
-
+        jQuery(document).ready(function(){
+            $("#about-box").hide();
+        });
+		
+        jQuery(document).ready(function(){
+  		$("#logo").on("click",function(){
+    		$("#about-box").show();
+  		});
+  	});
 	</script>
 </head>
 <body>
@@ -27,27 +29,28 @@
 
 	<div id="logo"><p><b>CHLORO</b>pHILE</p></div>
 
-	<div id="logo-para" class="para">
-<p>
-   <b>A design + research enterprise,</b> is an intellectual toolbox that favors a 
-   computational and technological engagement with the design object; enabling the invention 
-   and production of cultural and high performance techno-rational artifacts across domains 
-   of Architecture, Interaction and Industrial design.
-</p>
-</div>
+	<div id="about-box" class="box">
+        <p><b>Twenty froggies went to school
+Down beside a rushing pool
+Twenty little coats of green,
+Twenty vests all white and clean.
 
-	<!--<div>
-		<ul id="menu">
-			<li>Work</li>
-			<li>Team</li>
-			<li>Life</li>
+"We must be in time," said they.
+"First we study, then we play;
+That is how we keep the rule
+When we froggies go to school."</b></p>
+        </div>
 
-			<li>
-		</ul>
-	</div> -->	
+		<!--<div>
+			<ul id="menu">
+				<li>Work</li>
+				<li>Team</li>
+				<li>Life</li>
+
+				<li>
+			</ul>
+		</div> -->	
 
 
-</body>
+	</body>
 </html>
-
-
