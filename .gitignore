@@ -1,0 +1,12 @@
+# Folder
+/design/*
+
+# Files (globes)
+*.ext
+
+
+# Root
+README.md~
+
+
+
