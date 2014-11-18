@@ -1,10 +1,13 @@
+jQuery(document).ready(function(){
 var w = window.innerWidth > 1440 ? 1440 : (window.innerWidth || 1440),
         h = window.innerHeight > 900 ? 900 : (window.innerHeight || 900),
         radius = 5.25,
         links = [],
         simulate = true,
         zoomToAdd = true,
-        color = d3.scale.quantize().domain([10000, 7250]).range(["#BADEB7","#92D5DC","#FCF1B9", "#F4768B", "#EF4258","#51DBE2"])
+        color = d3.scale.quantize()
+		.domain([10000, 7250])
+		.range(["#BADEB7","#92D5DC","#FCF1B9", "#F4768B", "#EF4258","#51DBE2"]) // <= control flower's color !
  
     var numVertices = (w*h) / 40000;
     var maxVertices = 30;
@@ -91,3 +94,4 @@ var w = window.innerWidth > 1440 ? 1440 : (window.innerWidth || 1440),
  
         if(!simulate) force.stop()
     }
+});

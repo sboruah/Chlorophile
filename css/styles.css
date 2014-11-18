@@ -1,40 +1,64 @@
-body { background: #FFEC5F;}
-
-circle {
-    stroke: none;
-    fill: none;
-    pointer-events: none; }
-
-line {
-    pointer-events: none;
-    stroke: #EFEDF5;
-    stroke-width: 2px;
-    opacity: .05; }
-
-path{
-    stroke: #EFEDF5;
-    stroke-width: 2px;
-    stroke-opacity: .05; }
+/* HTML ************************************ */
+body { background: #BADEB7; }
 
 #logo {
-	background: rgba(5,5,5,0.80);
-    height: 180px;
-    width: 100px;
-    padding: 0 2% 0 2%;
     position: absolute;
+    background: rgba(5,5,5,0.80);
+    height: 180px;
+    width: 200px;
+    padding: 5px;
     top: 0%;
-    left: 5%;}
-
+    left: 5%; }
 #logo p {
-	padding-top: 120%;
-	font: 14px Helvetica, Arial, sans-serif;
+    position:absolute;
+    top: 140px;           
+    padding-left: 20%;
+    font: 14px Helvetica, Arial, sans-serif;
     color: #fff;
     text-decoration: none; }
 
 .box {
     position: absolute;
-    right: 26px;
+    left: 5%;
     top: 30%;
-    width: 20%;
-    padding: 20px; }
+    height: 180px;
+    width: 200px;
+    /*padding-right: 3%;*/
+    padding: 5px;}
 
+#about-box p {
+    font: 12px Helvetica, Arial, sans-serif; }
+
+.tag {
+  position: absolute;
+  left: 5%;
+  bottom: 0%;
+  height: 30px;
+  width: 200px;
+  background: rgba(5,5,5,0.80);
+  /*padding: 0 2% 0 2%;*/ }
+
+.copyright { 
+    color: #fff;
+    font-size: 12px;
+    font: Helvetica, Light;
+    line-height: 15px;
+    text-decoration: none;
+    padding-left: 20%;
+    bottom: 0%; }
+
+/* SVG ************************************* */
+circle {
+    stroke: none;
+    fill: none;
+    pointer-events: none;}
+
+line {
+    pointer-events: none;
+    stroke: #EFEDF5;
+    stroke-width: 2px;
+    opacity: .4;}
+path{
+    stroke: #EFEDF5;
+    stroke-width: 2px;
+    stroke-opacity: .05;}
