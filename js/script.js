@@ -1,10 +1,10 @@
-var w = window.innerWidth > 1400 ? 1400 : (window.innerWidth || 1400),
+var w = window.innerWidth > 1440 ? 1440 : (window.innerWidth || 1440),
         h = window.innerHeight > 900 ? 900 : (window.innerHeight || 900),
         radius = 5.25,
         links = [],
         simulate = true,
         zoomToAdd = true,
-        color = d3.scale.quantize().domain([10000, 7250]).range(["#FFEC5F","#8299CE","#EA7E73","#FF931E","#7AC943","#F276A0","#999999"])
+        color = d3.scale.quantize().domain([10000, 7250]).range(["#BADEB7","#92D5DC","#FCF1B9", "#F4768B", "#EF4258","#51DBE2"])
  
     var numVertices = (w*h) / 40000;
     var maxVertices = 30;
