@@ -1,6 +1,6 @@
 /* HTML ************************************ */
-html, body { background: #BADEB7; width:100%;height: 100%;}
-body, #sider { height: 100%; }
+html, body { background: #BADEB7; width:100%;}
+html, body, #sider { height: 100%; }
 /* SIDER *********************************** */
 #logo {
     top: 0%; 
@@ -14,6 +14,7 @@ body, #sider { height: 100%; }
     padding-left: 15%; 
     position:absolute; 
     bottom:0% }
+
 .menu-links {
     border-bottom: 2px solid #FFF;
     height: 2em;
@@ -27,10 +28,10 @@ body, #sider { height: 100%; }
 .menu-6 { background-color: #BADEB7; }
 
 #about-box {
-    height: 180px;
+    height: 12em;
     /*padding-right: 3%;*/
     padding: .5em;
-    font: 12px Helvetica, Arial, sans-serif; }
+    font: .9em Helvetica, Arial, sans-serif; }
 
 #about-box .hidden { visibility: none; }
 
@@ -42,7 +43,7 @@ body, #sider { height: 100%; }
     background: rgba(5,5,5,0.80);
     color: #fff;
     font: .9em Helvetica, Light;
-    text-decoration: none; }
+    text-decoration: none;}
 
 /* MAIN > HEADER ******************************** */
 .title {
@@ -72,6 +73,8 @@ body, #sider { height: 100%; }
 	transition: background-position .3s ease;
 	-webkit-transition-delay: .1s; } 
 .social a:hover{ background-position:0 -35px;border-bottom:none}
+/* MAIN > CONTENT ******************************** */
+
 /* SVG ************************************* */
 svg { position: absolute; width: 100%; height: 100%;}
 circle {
