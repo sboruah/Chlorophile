@@ -30,7 +30,7 @@
 <div id="sider" class="col-xs-4 col-md-2">
 	<div id="logo" class="col-md-10 col-xs-12"><p><b>CHLORO</b>pHILE</p></div> 
 	  <!-- MENU: ******************************** -->
-	<div class="col-md-10 col-xs-12 menu-links menu-1"><p> Link 1 </p></div>
+	<div class="col-md-10 col-xs-12 menu-links menu-1"><p> Link one </p></div>
 	<div class="col-md-10 col-xs-12 menu-links menu-2"><p> Link 2 </p></div>
 	<div class="col-md-10 col-xs-12 menu-links menu-3"><p> Link 3 </p></div>
 	<div class="col-md-10 col-xs-12 menu-links menu-4"><p> Link 4 </p></div>

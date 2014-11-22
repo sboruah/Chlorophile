@@ -1,53 +1,79 @@
 /* HTML ************************************ */
-body { background: #BADEB7; }
-
+html, body { background: #BADEB7; width:100%;height: 100%;}
+body, #sider { height: 100%; }
+/* SIDER *********************************** */
 #logo {
-    position: absolute;
+    top: 0%; 
+    height: 12em;
+    padding-left: .5em;
     background: rgba(5,5,5,0.80);
-    height: 180px;
-    width: 200px;
-    padding: 5px;
-    top: 0%;
-    left: 5%; }
-#logo p {
-    position:absolute;
-    top: 140px;           
-    padding-left: 20%;
-    font: 14px Helvetica, Arial, sans-serif;
     color: #fff;
+    font: 1em Helvetica, Arial, sans-serif;
     text-decoration: none; }
+#logo p {
+    padding-left: 15%; 
+    position:absolute; 
+    bottom:0% }
+.menu-links {
+    border-bottom: 2px solid #FFF;
+    height: 2em;
+    bottom: 0.2em;
+}
+.menu-1 { background-color: #51DBE2; }
+.menu-2 { background-color: #92D5DC; }
+.menu-3 { background-color: #FCF1B9; }
+.menu-4 { background-color: #F4768B; }
+.menu-5 { background-color: #EF4258; }
+.menu-6 { background-color: #BADEB7; }
 
-.box {
-    position: absolute;
-    left: 5%;
-    top: 30%;
+#about-box {
     height: 180px;
-    width: 200px;
     /*padding-right: 3%;*/
-    padding: 5px;}
-
-#about-box p {
+    padding: .5em;
     font: 12px Helvetica, Arial, sans-serif; }
 
-.tag {
-  position: absolute;
-  left: 5%;
-  bottom: 0%;
-  height: 30px;
-  width: 200px;
-  background: rgba(5,5,5,0.80);
-  /*padding: 0 2% 0 2%;*/ }
+#about-box .hidden { visibility: none; }
 
-.copyright { 
+#copyright {
+    position: absolute;
+    bottom: 0%; 
+    height: 3em;
+    padding-left: .5em;
+    background: rgba(5,5,5,0.80);
     color: #fff;
-    font-size: 12px;
-    font: Helvetica, Light;
-    line-height: 15px;
-    text-decoration: none;
-    padding-left: 20%;
-    bottom: 0%; }
+    font: .9em Helvetica, Light;
+    text-decoration: none; }
 
+/* MAIN > HEADER ******************************** */
+.title {
+	font-size: 3em;
+	margin-left: 10px;
+	margin-top:5px;
+	margin-bottom:5px
+}
+.social .twitter{background:url('../img/icon-twitter.svg') no-repeat 0 1px;background-size:20px}
+.social .facebook{background:url('../img/icon-facebook.svg') no-repeat 0 1px;background-size:20px}
+.social .github{background:url('../img/icon-github.svg') no-repeat 0 1px;background-size:20px}
+.social .linkedin{background:url('../img/icon-linkedin.svg') no-repeat 0 1px;background-size:20px}
+.social a {
+	font-size: 0;
+	color: transparent;
+	display: block;
+	height: 21px;
+	width: 20px;
+	margin-left: 10px;
+	margin-top:5px;
+	margin-bottom:5px
+	float:none; 
+	display:inline-block;
+	-webkit-transition: background-position .3s ease;
+	-moz-transition: background-position .3s ease;
+	-ms-transition: background-position .3s ease;
+	transition: background-position .3s ease;
+	-webkit-transition-delay: .1s; } 
+.social a:hover{ background-position:0 -35px;border-bottom:none}
 /* SVG ************************************* */
+svg { position: absolute; width: 100%; height: 100%;}
 circle {
     stroke: none;
     fill: none;
