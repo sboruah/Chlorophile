@@ -50,7 +50,7 @@ html, body, #sider { height: 100%; }
     padding: .5em;
     font: .9em Helvetica, Arial, sans-serif; }
 
-#about-box .hidden { visibility: none; }
+#about .hidden { visibility: none; }
 
 #cpright {
     position: absolute;
