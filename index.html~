@@ -18,7 +18,7 @@
 <script type="text/javascript">	
 	jQuery(document).ready(function(){
 		$("#logo").on("click",function(){
-			$("#about-box").toggleClass("hidden");
+			$("#about").toggleClass("hidden");
 		});
 	});
 </script>
@@ -30,12 +30,12 @@
 <div id="sider" class="col-xs-3 col-md-2">
 	<div id="logo" class="col-xs-12"><p><b>CHLORO</b>pHILE</p></div> 
 	  <!-- MENU: ******************************** -->
-	<div class="col-xs-12 menu-links menu-1"><p> Link 1 </p></div>
-	<div class="col-xs-12 menu-links menu-2"><p> Link 2 </p></div>
-	<div class="col-xs-12 menu-links menu-3"><p> Link 3 </p></div>
-	<div class="col-xs-12 menu-links menu-4"><p> Link 4 </p></div>
-	<div class="col-xs-12 menu-links menu-5"><p> Link 5 </p></div>
-	<div class="col-xs-12 menu-links menu-6"><p> Link 6 </p></div>
+	<div class="col-xs-12 menus menu-1"><p> Link 1 </p></div>
+	<div class="col-xs-12 menus menu-2"><p> Link 2 </p></div>
+	<div class="col-xs-12 menus menu-3"><p> Link 3 </p></div>
+	<div class="col-xs-12 menus menu-4"><p> Link 4 </p></div>
+	<div class="col-xs-12 menus menu-5"><p> Link 5 </p></div>
+	<div class="col-xs-12 menus menu-6"><p> Link 6 </p></div>
 	  <!-- ABOUT: ******************************** -->
 	<div id="about" class="col-xs-12">
 			<p>Twenty froggies went to school. Down beside a rushing pool. Twenty little coats of green, Twenty vests all white and clean."We must be in time," said they."First we study, then we play; That is how we keep the ruleWhen we froggies go to school."</p>
