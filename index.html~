@@ -27,23 +27,23 @@
 <!-- MUST DEFINE YOUR TOP-LEVEL STRUCTURE   -->
 <body id="chart">
 	<script src="js/d3-flower.js" type="text/javascript"></script><!-- inject flower into id="chart" as full width viz-->
-<div id="sider" class="col-xs-4 col-md-2">
-	<div id="logo" class="col-md-10 col-xs-12"><p><b>CHLORO</b>pHILE</p></div> 
+<div id="sider" class="col-xs-3 col-md-2">
+	<div id="logo" class="col-xs-12"><p><b>CHLORO</b>pHILE</p></div> 
 	  <!-- MENU: ******************************** -->
-	<div class="col-md-10 col-xs-12 menu-links menu-1"><p> Link 1 </p></div>
-	<div class="col-md-10 col-xs-12 menu-links menu-2"><p> Link 2 </p></div>
-	<div class="col-md-10 col-xs-12 menu-links menu-3"><p> Link 3 </p></div>
-	<div class="col-md-10 col-xs-12 menu-links menu-4"><p> Link 4 </p></div>
-	<div class="col-md-10 col-xs-12 menu-links menu-5"><p> Link 5 </p></div>
-	<div class="col-md-10 col-xs-12 menu-links menu-6"><p> Link 6 </p></div>
+	<div class="col-xs-12 menu-links menu-1"><p> Link 1 </p></div>
+	<div class="col-xs-12 menu-links menu-2"><p> Link 2 </p></div>
+	<div class="col-xs-12 menu-links menu-3"><p> Link 3 </p></div>
+	<div class="col-xs-12 menu-links menu-4"><p> Link 4 </p></div>
+	<div class="col-xs-12 menu-links menu-5"><p> Link 5 </p></div>
+	<div class="col-xs-12 menu-links menu-6"><p> Link 6 </p></div>
 	  <!-- ABOUT: ******************************** -->
-	<div id="about-box" class="col-md-10 col-xs-12">
+	<div id="about" class="col-xs-12">
 			<p>Twenty froggies went to school. Down beside a rushing pool. Twenty little coats of green, Twenty vests all white and clean."We must be in time," said they."First we study, then we play; That is how we keep the ruleWhen we froggies go to school."</p>
 		</div>
 	  <!-- COPYRIGHT: **************************** -->
-	<div id="copyright" class="col-md-10 col-xs-12"><p>© <i>2014, chlorophile.com</i></p></div>
+	<div id="cpright" class="col-xs-12"><p>© <i>2014, chlorophile.com</i></p></div>
 </div>
-<div id="main" class="col-xs-8 col-md-10">
+<div id="main" class="col-xs-9 col-md-10">
 	<div id="header">
 	    <div class="col-xs-6 col-md-10"><h3 class="page-title"> My nice website </h3></div>
 	    <div class="col-xs-6 col-md-2 pull-right social"><span>

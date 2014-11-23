@@ -1,6 +1,25 @@
 /* HTML ************************************ */
 html, body { background: #BADEB7; width:100%;}
 html, body, #sider { height: 100%; }
+/* STRUCTURE *******************************  /
+
+  #SIDER             #MAIN
++--------+---------------------------+
+|        |  .title            .social|   #header
+| #logo  | - - - - - - - - - - - - - +
+|- - - - |                           |
+| .menus |                           |
+|- - - - |                           |
+| #about |                           |
+|        |        #content           |
+|        |                           |   
+|        |                           |
+|        |                           |
+|- - - - |                           |  
+|#cpright|                           |
++--------+---------------------------+
+<svg> is under <body>. ********************* */
+
 /* SIDER *********************************** */
 #logo {
     top: 0%; 
@@ -15,11 +34,10 @@ html, body, #sider { height: 100%; }
     position:absolute; 
     bottom:0% }
 
-.menu-links {
+.menus {
     border-bottom: 2px solid #FFF;
     height: 2em;
-    bottom: 0.2em;
-}
+    bottom: 0.2em; }
 .menu-1 { background-color: #51DBE2; }
 .menu-2 { background-color: #92D5DC; }
 .menu-3 { background-color: #FCF1B9; }
@@ -27,15 +45,14 @@ html, body, #sider { height: 100%; }
 .menu-5 { background-color: #EF4258; }
 .menu-6 { background-color: #BADEB7; }
 
-#about-box {
+#about {
     height: 12em;
-    /*padding-right: 3%;*/
     padding: .5em;
     font: .9em Helvetica, Arial, sans-serif; }
 
 #about-box .hidden { visibility: none; }
 
-#copyright {
+#cpright {
     position: absolute;
     bottom: 0%; 
     height: 3em;
@@ -48,9 +65,9 @@ html, body, #sider { height: 100%; }
 /* MAIN > HEADER ******************************** */
 .title {
 	font-size: 3em;
-	margin-left: 10px;
-	margin-top:5px;
-	margin-bottom:5px
+	margin-left: 1em;
+	margin-top:.5em;
+	margin-bottom:.5em;
 }
 .social .twitter{background:url('../img/icon-twitter.svg') no-repeat 0 1px;background-size:20px}
 .social .facebook{background:url('../img/icon-facebook.svg') no-repeat 0 1px;background-size:20px}
@@ -76,7 +93,7 @@ html, body, #sider { height: 100%; }
 /* MAIN > CONTENT ******************************** */
 
 /* SVG ************************************* */
-svg { position: absolute; width: 100%; height: 100%;}
+svg { position: absolute; width: 100%; height: 100%;} /* = body's background */
 circle {
     stroke: none;
     fill: none;
