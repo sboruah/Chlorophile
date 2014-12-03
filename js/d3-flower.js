@@ -26,19 +26,8 @@ var w = window.innerWidth > 1440 ? 1440 : (window.innerWidth || 1440),
               vertices.pop();
           }
           force.nodes(vertices).start()
-        } else {
-          if (d3.event.scale > prevEventScale) {
-            radius+= .01
-          } else {
-            radius -= .01
-          }
-          vertices.forEach(function(d, i) {
-            angle = radius * (i+10);
-            vertices[i] = {x: angle*Math.cos(angle)+(w/2), y: angle*Math.sin(angle)+(h/2)};
-          });
-          force.nodes(vertices).start()
-        }
-        prevEventScale = d3.event.scale;
+        } 
+         prevEventScale = d3.event.scale;
     });
  
 
@@ -62,12 +51,6 @@ var w = window.innerWidth > 1440 ? 1440 : (window.innerWidth || 1440),
     function update(e) {
         path = path.data(d3_geom_voronoi(vertices))
         path.enter().append("path")
-            // drag node by dragging cell
-            .call(d3.behavior.drag()
-              .on("drag", function(d, i) {
-                  vertices[i] = {x: vertices[i].x + d3.event.dx, y: vertices[i].y + d3.event.dy}
-              })
-            )
             .style("fill", function(d, i) { return color(0) })
         path.attr("d", function(d) { return "M" + d.join("L") + "Z"; })
             .transition().duration(150).style("fill", function(d, i) { return color(d3.geom.polygon(d).area()) })
