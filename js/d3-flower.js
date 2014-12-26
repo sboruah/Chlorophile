@@ -42,7 +42,7 @@ var w = window.innerWidth > 1440 ? 1440 : (window.innerWidth || 1440),
               angle = radius * (vertices.length + 20);
               var label =  "";
               if (vertices.length % sparseFactor == 0) label = labels[vertices.length/sparseFactor];
-              vertices.push({x: angle*Math.cos(angle)+(w/2), y: angle*Math.sin(angle)+(h/2), label:label})
+		vertices.push(allNodes[vertices.length]);
           } else if (vertices.length > minVertices && d3.event.scale != prevEventScale) {
               vertices.pop();
           }
@@ -72,6 +72,12 @@ var w = window.innerWidth > 1440 ? 1440 : (window.innerWidth || 1440),
     function update(e) {
         path = path.data(d3_geom_voronoi(vertices))
         path.enter().append("path")
+	    // drag node by dragging cell
+	    .call(d3.behavior.drag()
+              .on("drag", function(d, i){
+		vertices[i] = {x: vertices[i].x + d3.event.dx, y: vertices[i].y + d3.event.dy}	
+	      })
+            )
             .style("fill", function(d, i) { return color(0) })
         path.attr("d", function(d) { return "M" + d.join("L") + "Z"; })
             .transition().duration(150).style("fill", function(d, i) { return color(d3.geom.polygon(d).area()) })
